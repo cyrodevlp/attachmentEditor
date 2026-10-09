@@ -1,12 +1,7 @@
 /*
-   Image Operations:
-   A file that is responsible for image manipulation and processing, 
-   including cropping, resizing, rotating, and applying filters. 
-   It provides a set of functions that can be used to perform various operations on images, 
-   such as adjusting brightness, contrast, saturation, and more. 
-
-   The functions are designed to work with HTMLCanvasElement and 
-   ImageData objects, allowing for efficient image processing in the browser.
+  Vencord, a Discord client mod
+  Copyright (c) 2026 Vendicated and contributors
+  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 export type RatioKey = "free" | "original" | "1:1" | "3:2" | "2:3" | "4:3" | "3:4" | "16:9" | "9:16";
