@@ -1,10 +1,7 @@
-/* 
-   Native Module:
-   Runs in Discord's main process (Electron), so it can download, install and start things the
-   editor window itself is not allowed to. Everything lives in one folder inside Discord's data
-   directory, so "Uninstall" is just deleting that folder.
-
-   Generative Erase engine = IOPaint (LaMa model) in its own Python 3.11 environment, set up with `uv`. 
+/*
+  Vencord, a Discord client mod
+  Copyright (c) 2026 Vendicated and contributors
+  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 import { ChildProcess, spawn, execFile } from "child_process";
