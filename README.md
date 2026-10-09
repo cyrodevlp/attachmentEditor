@@ -4,7 +4,7 @@ Edit image attachments before sending or after sending. Click the gear icon on a
 ## First time setting up custom plugins?
 Follow this [Guide](https://docs.vencord.dev/installing/custom-plugins/) to set-up custom plugins in your directory.
 
-## How to install a plugin?
+## How to install the plugin?
 1. Direct your terminal to the `userplugins` folder, e.g. `cd Vencord/src/userplugins` or if you are already inside the `Vencord` folder, then do `cd src/userplugins`. 
 2. Copy a GitHub repo link: 
 ```cmd
