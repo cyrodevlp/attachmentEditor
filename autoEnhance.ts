@@ -1,23 +1,7 @@
-/* 
-   Auto enhance:
-   A per-pixel, color-aware pipeline that works in the OKLab perceptual color space.
-
-   analyzeAutoData() studies a small copy of the picture (tones, color cast, how much of each hue is
-   present, haze) and returns AutoParams. applyAutoData() then enhances every pixel of an image of
-   any size with those parameters and blends the result with the original by `t` (Intensity).
-
-   What happens to each pixel:
-   1. Dehaze          optional, only when the picture really is hazy (dark channel prior)
-   2. White balance   cast measured on near-neutral pixels (median fallback), shifted in OKLab a/b
-   3. Global tone     black / white points and a midtone curve, in either direction
-   4. Local tone map  an edge-preserving (guided filter) brightness map lifts what is dark and calms
-                      what is blown *around that pixel*, so there are no halos
-   5. Detail          clarity (wide) and sharpening (tight): noise-gated, overshoot-limited, midtone
-                      weighted, and held back on skin and smooth sky
-   6. Color           per-hue-band chroma targets measured on the picture itself, vibrance, extra care
-                      for skin / sky / foliage, chroma follows tone changes
-   7. Gamut mapping   out-of-range colors are pulled in along chroma (hue and lightness kept)
-   Everything is guarded: grayscale pictures stay neutral, and nothing is boosted that is not needed.
+/*
+  Vencord, a Discord client mod
+  Copyright (c) 2026 Vendicated and contributors
+  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 export interface AutoParams {
