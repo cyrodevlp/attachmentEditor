@@ -22,3 +22,9 @@ You can update attachmentEditor by directing your terminal to its folder (`cd Ve
 ```sh
 git pull
 ```
+
+### Image Processing & Privacy Notice
+
+This plugin uses IOPaint for image processing. IOPaint runs locally on your machine, and image processing requests are sent to your local IOPaint instance rather than a third party image processing service or an individual with another server or computer.
+
+Your images stays to your computer only
