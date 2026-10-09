@@ -1,10 +1,8 @@
-/* 
-   Generative Erase:
-   The AI runs on the user's own PC, so it costs nothing to host.
-   The plugin installs and starts a local IOPaint (LaMa) engine by itself (see native.ts).
-   With the "use my own server" setting it talks to an IOPaint server the user runs on the port instead.
-   Mask convention: white = remove, black = keep.
- */ 
+/*
+  Vencord, a Discord client mod
+  Copyright (c) 2026 Vendicated and contributors
+  SPDX-License-Identifier: GPL-3.0-or-later
+ */
 
 import { PluginNative } from "@utils/types";
 import { refineCutout } from "./cutout";
