@@ -1,17 +1,7 @@
-/* 
-   Background Cutout Cleanups:
-   Cleans up the cut-out the background remover returns. Segmentation models give a good outline but
-   a ragged one: stray specks, tiny holes, and a soft halo that does not follow the real edge.
-
-   0. See-through areas on flat backgrounds: when the picture sits on one flat color (logos, icons, product
-        shots), enclosed areas of that same color are holes, not part of the subject. Models
-        often leave these half-kept, so they are decided as a whole instead.
-   1. Specks and holes: small detached blobs are dropped and tiny holes are filled
-   2. Edge snapping: a guided filter (the picture itself is the guide) pulls the soft edge onto
-        the real contour, so hair and fine edges follow what is in the photo
-   3. Halo trim: a contrast curve on the edge keeps it about one pixel wide instead of a soft band
-   4. Color cleanup: edge pixels still carry some of the old background's color (a pale fringe on any dark
-        or colored background). Their color is replaced by the subject's own nearby color.
+/*
+  Vencord, a Discord client mod
+  Copyright (c) 2026 Vendicated and contributors
+  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 const clamp01 = (n: number) => (n < 0 ? 0 : n > 1 ? 1 : n);
