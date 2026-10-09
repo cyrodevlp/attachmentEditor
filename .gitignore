@@ -1,0 +1,16 @@
+node_modules/
+venv/
+.venv/
+pycache/
+
+.env
+.env.*
+!.env.example
+
+.idea/
+.vscode/
+*.iml
+
+.log
+
+*.md
