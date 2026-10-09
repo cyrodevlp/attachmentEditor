@@ -1,12 +1,7 @@
 /*
- * Image Editor Modal:
- * This is the editor modal for the Attachment Editor plugin.
- * It allows users to edit images with various tools and adjustments.
- * 
- * The modal includes features such as cropping, adjusting image properties, 
- * applying filters, marking up images, erasing parts of the image, and changing the background.
- * The modal also provides options for undoing and redoing changes, zooming in and out, 
- * and saving the edited image.
+ * Vencord, a Discord client mod
+ * Copyright (c) 2026 Vendicated and contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 import { Button, TextButton } from "@components/Button";
