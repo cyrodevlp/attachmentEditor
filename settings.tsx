@@ -1,10 +1,7 @@
 /*
- * Settings:
- * This is the settings page for the Attachment Editor plugin.
- * It allows users to configure various options related to the plugin's functionality.
- * 
- * The settings include options for the IOPaint engine server, Directory storage usage, and other preferences
- * such as automatic startup, GPU usage, idle timeout, server port, and allocated memory.
+ * Vencord, a Discord client mod
+ * Copyright (c) 2024 Vendicated and contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 import { definePluginSettings } from "@api/Settings";
