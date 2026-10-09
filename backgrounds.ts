@@ -1,10 +1,8 @@
-/* 
-   Background Presets:
-   Background presets for the Background tab. Every preset is painted with canvas code, so there are
-   no image files to ship. A preset can have an `inset`: the picture is then shrunk into the middle and
-   the preset becomes a frame around it (used by the Frame group). Presets without an inset sit behind a
-   picture whose own background has been removed.
- */ 
+/*
+  Vencord, a Discord client mod
+  Copyright (c) 2026 Vendicated and contributors
+  SPDX-License-Identifier: GPL-3.0-or-later
+ */
 
 export interface Background {
     key: string;
